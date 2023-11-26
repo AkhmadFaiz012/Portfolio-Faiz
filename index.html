@@ -201,23 +201,24 @@
                     <p class="font-medium text-md text-dark-light-1 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quod nostrum veritatis eaque fugit excepturi illum?</p>
                 </div>
             </div>
-            <form>
+
+            <form name="Portfolio-contact-form">
                 <div class="w-full lg:w-2/3 lg:mx-auto">
                     <div class="w-full px-4 mb-10">
                         <label for="name" class="text-base text-primary font-semibold after:content-['*'] after:ml-0.5 after:text-pink-500">Nama</label>
-                        <input type="text" id="name" placeholder="masukkan nama kamu ya..." class="w-full placeholder:text-sm bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                        <input type="text" id="name" name="nama" placeholder="masukkan nama kamu ya..." class="w-full placeholder:text-sm bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                     </div>
                     <div class="w-full px-4 mb-6">
                         <label for="email" class="text-base text-primary font-semibold after:content-['*'] after:ml-0.5 after:text-pink-500">Email</label>
-                        <input type="email" id="email" placeholder="email..." class="w-full placeholder:text-sm bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary invalid:text-pink-500 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer">
+                        <input type="email" id="email" name="email" placeholder="email..." class="w-full placeholder:text-sm bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary invalid:text-pink-500 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer">
                         <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email tidak valid</p>
                     </div>
                     <div class="w-full px-4 mb-8">
                         <label for="message" class="text-base text-primary font-semibold after:content-['*'] after:ml-0.5 after:text-pink-500">Pesan</label>
-                        <textarea type="message" id="message" placeholder="tulis pesan kamu..." class="w-full placeholder:text-sm bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
+                        <textarea type="message" id="message" name="pesan" placeholder="tulis pesan kamu..." class="w-full placeholder:text-sm bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
                     </div>
                     <div class="w-full px-4 lg:flex lg:justify-center">
-                        <button class="font-Montserrat font-semibold btn btn-red w-full lg:w-1/4 hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>                        
+                        <button type="submit" class="font-Montserrat font-semibold btn btn-red w-full lg:w-1/4 hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>                        
                     </div>
                 </div>
             </form>
@@ -289,5 +290,17 @@
 
 
     <script src="src/js/main.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzJ8Ahd81IZLnfW3zG2QKx-CwI92lgXN7todqycckuyqmDKnQtu41sR2ofDWr6FNLg/exec';
+        const form = document.forms['Portfolio-contact-form']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
