@@ -9,7 +9,7 @@ module.exports = {
         'dark-light-1': '#64748b',
         'dark-light-2': '#94a3b8',
         'dark-light-3': '#cbd5e1',
-        'primary' : '#dc2626',
+        'primary' : '#06b6d4',
       },
       fontFamily: {
         Poppins: ["poppins, sans-serif"],
