@@ -1841,6 +1841,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .lg\:font-bold {
     font-weight: 700;
   }
