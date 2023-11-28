@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["index.html", "/src/html/page.html"],
   theme: {
     extend: {
       colors: {
@@ -12,9 +12,11 @@ module.exports = {
         'primary' : '#06b6d4',
       },
       fontFamily: {
-        Poppins: ["poppins, sans-serif"],
-        Montserrat: ["montserrat, sans-serif"],
-        Roboto: ["roboto, sans-serif"],
+        'Poppins': ["poppins, sans-serif"],
+        'Montserrat': ["montserrat, sans-serif"],
+        'Roboto': ["roboto, sans-serif"],
+        'open-sans': ["open-sans, sans-serif"],
+        'josefin-sans': ["josefin-sans, sans-serif"],
       },
       container: {
         center: true,

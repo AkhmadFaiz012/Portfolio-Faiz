@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/src/css/output.css" />
+    <!--favicon light theme-->
+    <link rel="icon" href="/src/img/Favicon-dark.png" media="(prefers-color-scheme: light)" />
+    <!--favicon dark theme-->
+    <link rel="icon" href="/src/img/Favicon-white.png" media="(prefers-color-scheme: dark)" />
+</head>
+
+<body class="font-Poppins">
+    <!-- nav -->
+    <section id="nav" class="bg-transparent absolute top-0 left-0 w-full flex items-center z-100">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#" class="font-bold text-primary font-Poppins text-2xl block py-6">Portfolio.</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full">
+                        <ul class="block lg:flex font-medium">
+                            <li class="group">
+                                <a href="#hero"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary cursor-pointer">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary cursor-pointer">Tentang</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary cursor-pointer">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="/src/html/page.html"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary cursor-pointer">Keahlian</a>
+                            </li>
+                            <li class="group">
+                                <a href="https://drive.google.com/drive/folders/1WpygPTKtw9ixzMNC_qq6upfueaD3UyXW?usp=sharing"
+                                    class="text-base font-medium btn-nav btn-red hover:bg-click-btn py-2 mx-8 flex justify-center cursor-pointer">Download
+                                    CV</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nav -->
+</body>
+
+</html>
