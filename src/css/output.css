@@ -1698,6 +1698,18 @@ video {
     width: 66.666667%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .lg\:w-8\/12 {
+    width: 66.666667%;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
   }
@@ -1766,6 +1778,12 @@ video {
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
+
+  @media (min-width: 1280px) {
+    .lg\:xl\:w-1\/2 {
+      width: 50%;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1781,5 +1799,9 @@ video {
 
   .xl\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 }
