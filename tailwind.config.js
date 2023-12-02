@@ -10,6 +10,7 @@ module.exports = {
         'dark-light-2': '#94a3b8',
         'dark-light-3': '#cbd5e1',
         'primary' : '#06b6d4',
+        'primary-dark': '#525252',
         "primary-2": '#d946ef',
         "primary-3": '#ec4899',
         "button-1": '#6366f1',
