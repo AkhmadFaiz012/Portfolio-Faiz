@@ -1,5 +1,19 @@
-color:
-bg-light: #f3f4f6
-bg-dark: #030712
-primary: #b91c1c
+COLOR-SCHEME-DARK
+text : #ffff
+background : #0a0a0a
+primary : #1e3a8a
+secondary : #d4d4d4
+accent : #86198f
+border : #525252
 
+COLOR-SCHEME-LIGHT
+text : #0000
+background : 
+primary : 
+secondary : 
+accent : 
+
+FONT
+heading : poppins
+body : poppins
+type-scale : 1.333
