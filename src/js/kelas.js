@@ -16,8 +16,8 @@ window.onscroll = function () {
     const fixedNav = header.offsetTop;
  
     if (window.pageYOffset > fixedNav) {
-       header.classList.add('navbar-fixed');
+       header.classList.add('navbar-fixed-ireng');
     } else {
-       header.classList.remove('navbar-fixed');
+       header.classList.remove('navbar-fixed-ireng');
     }
  };
